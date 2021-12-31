@@ -1,3 +1,12 @@
 <div class="wrapper">
     <h1>Hello, friend!</h1>
+
+    <button (click)="updateButtonClickHandler()">Update!</button>
+
+    <div class="gallery">
+        <div class="item" *ngFor="let item of photos">
+            <!--            <img [src]="item.thumbnailUrl" [alt]="" />-->
+            <div class="info">{{ item.albumId }}. {{ item.id }}. {{ item.title }}</div>
+        </div>
+    </div>
 </div>
